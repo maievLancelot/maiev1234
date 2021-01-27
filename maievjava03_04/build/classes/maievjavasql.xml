@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="maiev">
+	<!-- <resultMap type="maievjavaspring01_49.maievjavaspring01_49_01" id="resualmap"> 
+		<result property="id" column="t_id"/> <result property="number" column="t_number"/> 
+		<result property="name" column="t_name"/> </resultMap> <resultMap type="maievjavaspring01_53.maievjavaspring01_53_01" 
+		id="resultmap"> <result property="id" column="id"/> <result property="number" 
+		column="number"/> </resultMap> -->
+	<!-- 出版社 -->
+	<insert id="maiev1"
+		parameterType="maievjava03_99.maievjava03_99_01">
+		insert into maiev07 set
+		id=#{id},
+		name=#{name},
+		name2=#{name2}
+	</insert><!-- 添加出版社 -->
+	<select id="maiev2" resultType="maievjava03_99.maievjava03_99_01" parameterType="maievjava03_99.maievjava03_99_01">
+		select * from maiev07;
+	</select><!-- 浏览一个出版社 -->
+	
+	
+	
+</mapper>
+ <!-- 买书
+create table book_market(book_market_id long
+,user_id int ,
+user_name text,
+book_id int,
+book_name text,
+book_selling_price int,
+book_Member_discount double,
+book_number int,
+book_money int,
+book_time_for_selling Timestamp,
+book_purchase_pattern int);
+  -->
+<!-- 出版社
+create table publishers(publishers_id int primary key auto_increment,
+publishers_name text,publishers_message text);
+
+
+
+-->  
+<!-- 新增书目
+create table book_statement(book_id int primary key auto_increment,
+book_name text,
+publishers_id int,
+publishers_name text,
+publishers_message text,
+book_author text,
+book_ISBN text,
+book_selling_price int,
+book_purchasing_price int,
+book_number int,
+book_Member_discount double);
+ -->
