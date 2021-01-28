@@ -7,18 +7,7 @@
 <title>Insert title here</title>
 </head>
 maiev
-maiev
-maiev
-maiev
-maiev
-maiev
-maiev
-maiev
-maiev
-maiev
-maiev
-maiev
-maiev
+
 <body>
 <h1>maiev</h1>
 </body>
